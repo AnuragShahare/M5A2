@@ -1,0 +1,55 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('users');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.users.drop();
+
+// Insert a few documents into the sales collection.
+db.users.insertMany([
+  { 
+    '_id': 1, 
+    'name': 'user1',
+    'email': 'user1@gmail.com',
+    'role': 'user',
+    'photo':'user1.jpg', 
+    'active': true, 
+    'password':'user123' },
+  { 
+    '_id': 2, 
+    'name': 'user2',
+    'email': 'user2@gmail.com',
+    'photo':'user2.jpg',
+    'role': 'admin', 
+    'active': true, 
+    'password':'user123' },
+  { 
+    '_id': 3, 
+    'name': 'user3',
+    'email': 'user3@gmail.com',
+    'photo':'user3.jpg',
+    'role': 'student', 
+    'active': true, 
+    'password':'user123' },
+  { 
+    '_id': 4, 
+    'name': 'user4',
+    'email': 'user4@gmail.com',
+    'photo':'user5.jpg',
+    'role': 'staff', 
+    'active': true, 
+    'password':'user123' },
+  { 
+    '_id': 5, 
+    'name': 'user5',
+    'email': 'user5@gmail.com',
+    'photo':'user5.jpg',
+    'role': 'user', 
+    'active': true, 
+    'password':'user123' },                
+]);
